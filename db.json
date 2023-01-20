@@ -1,0 +1,14 @@
+{
+  "vehicleList": [
+    {
+      "make": "BMW",
+      "model": "i4",
+      "year": "2023",
+      "price": 55900,
+      "color": "Black",
+      "condition": "New",
+      "comment": "new",
+      "id": 1
+    }
+  ]
+}
