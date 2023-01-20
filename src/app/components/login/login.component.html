@@ -1,0 +1,42 @@
+<div class="login-container">
+  <form [formGroup]="loginForm" novalidate (ngSubmit)="onLoginSubmit()">
+    <mat-card class="shipping-card">
+      <mat-card-header>
+        <mat-card-title style="margin-left: -15px;">Dealership Inventory Management System</mat-card-title>
+        <mat-card-subtitle style="margin-left: -15px;">Sign In</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width" appearance="fill">
+              <input matInput placeholder="Username" formControlName="username" [(ngModel)]="loginForm.value.username">
+              <mat-error *ngIf="loginForm.controls['username'].hasError('required')">
+                A username is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col">
+            <mat-form-field class="full-width" appearance="fill">
+              <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" formControlName="password" [(ngModel)]="loginForm.value.password">
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              <mat-error *ngIf="loginForm.controls['password'].hasError('required')">
+                Your password is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit">Sign In</button>
+        <p class="loginCredentials"><b>Username</b>: admin&nbsp;&nbsp;<b>Password</b>: admin</p>
+      </mat-card-actions>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <p>Sign Up</p>
+        <!-- <p class="signup" mat-line>Don't have an Account? <a [routerLink]="['/register']" href="#">Sign Up</a></p> -->
+      </mat-card-content>
+    </mat-card>
+  </form>
+</div>

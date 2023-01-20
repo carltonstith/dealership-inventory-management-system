@@ -1,11 +1,5 @@
 # Dealership Inventory Management System
 
-![GitHub repo size](https://img.shields.io/github/repo-size/carltonstith/README-template.md)
-![GitHub contributors](https://img.shields.io/github/contributors/carltonstith/README-template.md)
-![GitHub stars](https://img.shields.io/github/stars/carltonstith/README-template.md?style=social)
-![GitHub forks](https://img.shields.io/github/forks/carltonstith/README-template.md?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/carltonstith?style=social)
-
 The dealership inventory management system application is used by dealership owners, general managers, general sales managers and internet sales managers. 
 
 This project uses [Angular Material](https://material.angular.io/) for the design components and was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
@@ -13,11 +7,11 @@ This project uses [Angular Material](https://material.angular.io/) for the desig
 ## Prerequisites
 Node and Angular should be installed on your system. If it isn't, run `npm install -g @angular/cli`.
 
+Install [json-server](https://github.com/typicode/json-server) by running `npm install -g json-server`.
+
 ## Installing the dealership inventory management system
 
-Clone the project by running `git clone git@github.com:carltonstith/dealership-inventory-management-system.git`
-
-Install `json-server` by running `npm install -g json-server`
+Clone the project by running `git clone git@github.com:carltonstith/dealership-inventory-management-system.git`.
 
 ## Development server
 
